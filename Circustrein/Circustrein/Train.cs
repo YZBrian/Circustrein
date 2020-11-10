@@ -6,8 +6,16 @@ namespace Circustrein
 {
     public class Train
     {
-        private List<Animal> animals = new List<Animal>();
+        private List<Animal> Animals { get; set; }
         private List<Wagon> Wagons { get; set; }
-        public Wagon Wagon = new Wagon();
+
+
+        public Train()
+        {
+            Animals = new List<Animal>();
+            Wagon wagon = new Wagon();
+            wagon.TryAdd();
+        }
+
     }
 }

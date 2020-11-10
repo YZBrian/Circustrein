@@ -7,6 +7,8 @@ namespace Circustrein
     {
         static void Main(string[] args)
         {
+            Train train = new Train();
+
             List<Animal> animals = new List<Animal>();
             Animal animal1 = new Animal(Size.Small, Diet.Herbivore);
             Animal animal2 = new Animal(Size.Medium, Diet.Carnivore);

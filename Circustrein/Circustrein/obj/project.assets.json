@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein.csproj",
+      "projectUniqueName": "C:\\Users\\Brian\\Source\\Repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
       "projectName": "Circustrein",
-      "projectPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein.csproj",
+      "projectPath": "C:\\Users\\Brian\\Source\\Repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
       "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\obj\\",
+      "outputPath": "C:\\Users\\Brian\\Source\\Repos\\Circustrein\\Circustrein\\Circustrein\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

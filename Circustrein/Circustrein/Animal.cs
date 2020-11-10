@@ -32,7 +32,7 @@ namespace Circustrein
 
         public override string ToString()
         {
-            return "Animal: " + Size + " " + Diet;
+            return "This animal is a " + Size + " " + Diet;
         }
     }
 }
