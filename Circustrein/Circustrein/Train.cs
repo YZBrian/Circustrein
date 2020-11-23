@@ -6,16 +6,30 @@ namespace Circustrein
 {
     public class Train
     {
-        private List<Animal> Animals { get; set; }
         private List<Wagon> Wagons { get; set; }
-
 
         public Train()
         {
-            Animals = new List<Animal>();
-            Wagon wagon = new Wagon();
-            wagon.TryAdd();
+            Wagons = new List<Wagon>();
         }
 
+        public List<Wagon> GetAllWagons()
+        {
+            return Wagons;
+        }
+
+        public void AddWagon()
+        {
+            Wagon wagon = new Wagon();
+            Wagons.Add(wagon);
+        }
+
+        public void DivideAnimals(List<Animal> animalCollection)
+        {
+            foreach (Animal animal in animalCollection)
+            {
+
+            }
+        }
     }
 }
