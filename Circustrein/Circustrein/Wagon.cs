@@ -29,10 +29,6 @@ namespace Circustrein
             return AnimalsInWagon;
         }
 
-
-        //This method checks if you are adding a carnivore and if there already is a carnivore in the wagon.
-        //Because 2 carnivores can never be in the same wagon.
-
         private bool CheckDoubleCarnivore(Animal animalToCompare)
         {
             foreach (Animal animal in AnimalsInWagon)
@@ -46,8 +42,6 @@ namespace Circustrein
             return true;
         }
 
-        //This method checks if you are adding a carnivore or a herbivore and if the size of this animal is compatible with the size of the animals in the wagon.
-        //Because a carnivore cannot be bigger or equally as big as another animal.
         private bool CheckCarnivoreSize(Animal animalToCompare)
         {
             foreach (Animal animal in AnimalsInWagon)
@@ -75,7 +69,7 @@ namespace Circustrein
             return true;
         }
 
-        //This method tries to add an animal to a wagon by checking the previous two methods and then checking if there is room.
+        //This method tries to add an animal to a wagon by checking the previous three methods and then checking if there is room.
         public bool TryAdd(Animal animalToAdd)
         {
             if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSize(animalToAdd) &&

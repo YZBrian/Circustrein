@@ -14,16 +14,17 @@ namespace Circustrein
 
             List<Animal> animalCollection = new List<Animal>();
 
-            Animal animal1 = new Animal(Size.Large, Diet.Herbivore);
-            Animal animal2 = new Animal(Size.Small, Diet.Carnivore);
-            Animal animal3 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal4 = new Animal(Size.Large, Diet.Herbivore);
-            Animal animal5 = new Animal(Size.Small, Diet.Carnivore);
-            Animal animal6 = new Animal(Size.Small, Diet.Carnivore);
-            Animal animal7 = new Animal(Size.Large, Diet.Carnivore);
-            Animal animal8 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal9 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal10 = new Animal(Size.Small, Diet.Herbivore);
+            Animal animal1 = new Animal(Size.Medium, Diet.Carnivore);
+            Animal animal2 = new Animal(Size.Small, Diet.Herbivore);
+            Animal animal3 = new Animal(Size.Medium, Diet.Carnivore);
+            Animal animal4 = new Animal(Size.Large, Diet.Carnivore);
+            Animal animal5 = new Animal(Size.Small, Diet.Herbivore);
+            Animal animal6 = new Animal(Size.Medium, Diet.Herbivore);
+            Animal animal7 = new Animal(Size.Small, Diet.Herbivore);
+            Animal animal8 = new Animal(Size.Small, Diet.Herbivore);
+            Animal animal9 = new Animal(Size.Large, Diet.Herbivore);
+            Animal animal10 = new Animal(Size.Medium, Diet.Herbivore);
+            
 
             animalCollection.Add(animal1);
             animalCollection.Add(animal2);
@@ -40,6 +41,7 @@ namespace Circustrein
 
             foreach (Wagon wagon in train.GetAllWagons())
             {
+                Console.WriteLine();
                 Console.WriteLine("Current wagon size is: " + wagon.CurrentSize);
                 foreach (Animal animal in wagon.GetAnimalsInWagon())
                 {

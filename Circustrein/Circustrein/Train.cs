@@ -18,6 +18,7 @@ namespace Circustrein
             return Wagons;
         }
 
+        //Meth
         public void AddWagon()
         {
             Wagon wagon = new Wagon();
@@ -30,7 +31,10 @@ namespace Circustrein
             {
                 foreach (Wagon wagon in Wagons)
                 {
-                    wagon.TryAdd(animal);
+                    if (!animal.IsAdded)
+                    {
+                        wagon.TryAdd(animal);
+                    }
                 }
 
                 if (!animal.IsAdded)
