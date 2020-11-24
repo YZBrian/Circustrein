@@ -14,16 +14,16 @@ namespace Circustrein
 
             List<Animal> animalCollection = new List<Animal>();
 
-            Animal animal1 = new Animal(Size.Large, Diet.Carnivore);
-            Animal animal2 = new Animal(Size.Medium, Diet.Herbivore);
+            Animal animal1 = new Animal(Size.Large, Diet.Herbivore);
+            Animal animal2 = new Animal(Size.Small, Diet.Carnivore);
             Animal animal3 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal4 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal5 = new Animal(Size.Large, Diet.Herbivore);
-            Animal animal6 = new Animal(Size.Large, Diet.Carnivore);
-            Animal animal7 = new Animal(Size.Medium, Diet.Herbivore);
+            Animal animal4 = new Animal(Size.Large, Diet.Herbivore);
+            Animal animal5 = new Animal(Size.Small, Diet.Carnivore);
+            Animal animal6 = new Animal(Size.Small, Diet.Carnivore);
+            Animal animal7 = new Animal(Size.Large, Diet.Carnivore);
             Animal animal8 = new Animal(Size.Medium, Diet.Herbivore);
             Animal animal9 = new Animal(Size.Medium, Diet.Herbivore);
-            Animal animal10 = new Animal(Size.Large, Diet.Herbivore);
+            Animal animal10 = new Animal(Size.Small, Diet.Herbivore);
 
             animalCollection.Add(animal1);
             animalCollection.Add(animal2);
@@ -36,15 +36,7 @@ namespace Circustrein
             animalCollection.Add(animal9);
             animalCollection.Add(animal10);
 
-          /*  foreach (Animal animal in animalCollection)
-            {
-                foreach (Wagon wagon in train.GetAllWagons())
-                {
-                    wagon.TryAdd(animal);
-                }
-            } */
-          
-          train.DivideAnimals(animalCollection);
+            train.DivideAnimals(animalCollection);
 
             foreach (Wagon wagon in train.GetAllWagons())
             {

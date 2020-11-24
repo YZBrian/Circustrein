@@ -28,7 +28,17 @@ namespace Circustrein
         {
             foreach (Animal animal in animalCollection)
             {
+                foreach (Wagon wagon in Wagons)
+                {
+                    wagon.TryAdd(animal);
+                }
 
+                if (!animal.IsAdded)
+                {
+                    Wagon wagon = new Wagon();
+                    wagon.TryAdd(animal);
+                    Wagons.Add(wagon);
+                }
             }
         }
     }

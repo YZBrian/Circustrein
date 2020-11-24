@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 
@@ -15,7 +16,6 @@ namespace Circustrein
         public int CurrentSize
         {
             get { return AnimalsInWagon.Sum(e => (int) e.Size); }
-
         }
 
         public Wagon()
@@ -81,7 +81,9 @@ namespace Circustrein
             if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSize(animalToAdd) &&
                 CheckHerbivoreSize(animalToAdd) && (int) animalToAdd.Size + CurrentSize <= MaxSize)
             {
+                animalToAdd.IsAdded = true;
                 AnimalsInWagon.Add(animalToAdd);
+
                 return true;
             }
 

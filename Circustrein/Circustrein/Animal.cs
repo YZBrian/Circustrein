@@ -21,11 +21,13 @@ namespace Circustrein
     {
         public Size Size { get; private set; }
         public Diet Diet { get; private set; }
+        public bool IsAdded { get; set; }
 
         public Animal(Size size, Diet diet)
         {
             Size = size;
             Diet = diet;
+            IsAdded = false;
         }
 
         public override string ToString()
