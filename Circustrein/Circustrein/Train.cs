@@ -18,7 +18,6 @@ namespace Circustrein
             return Wagons;
         }
 
-        //Meth
         public void AddWagon()
         {
             Wagon wagon = new Wagon();
@@ -29,21 +28,26 @@ namespace Circustrein
         {
             foreach (Animal animal in animalCollection)
             {
-                foreach (Wagon wagon in Wagons)
-                {
-                    if (!animal.IsAdded)
-                    {
-                        wagon.TryAdd(animal);
-                    }
-                }
-
-                if (!animal.IsAdded)
+                if (!TryAddToExistingWagon(animal))
                 {
                     Wagon wagon = new Wagon();
                     wagon.TryAdd(animal);
                     Wagons.Add(wagon);
                 }
             }
+        }
+
+        private bool TryAddToExistingWagon(Animal animal)
+        {
+            foreach (Wagon wagon in Wagons)
+            {
+                if (wagon.TryAdd(animal))
+                {
+                    return true;
+                }
+            }
+
+            return false;
         }
     }
 }

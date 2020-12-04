@@ -24,3 +24,16 @@ C:\Users\Brian\Source\Repos\Circustrein\Circustrein\Circustrein\obj\Debug\netcor
 C:\Users\Brian\Source\Repos\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.dll
 C:\Users\Brian\Source\Repos\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.pdb
 C:\Users\Brian\Source\Repos\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.genruntimeconfig.cache
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.exe
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.deps.json
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.runtimeconfig.json
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.runtimeconfig.dev.json
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.dll
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\bin\Debug\netcoreapp3.1\Circustrein.pdb
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.csprojAssemblyReference.cache
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.AssemblyInfoInputs.cache
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.AssemblyInfo.cs
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.csproj.CoreCompileInputs.cache
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.dll
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.pdb
+C:\Users\Brian\RiderProjects\Circustrein\Circustrein\Circustrein\obj\Debug\netcoreapp3.1\Circustrein.genruntimeconfig.cache

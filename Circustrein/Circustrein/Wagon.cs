@@ -75,7 +75,6 @@ namespace Circustrein
             if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSize(animalToAdd) &&
                 CheckHerbivoreSize(animalToAdd) && (int) animalToAdd.Size + CurrentSize <= MaxSize)
             {
-                animalToAdd.IsAdded = true;
                 AnimalsInWagon.Add(animalToAdd);
 
                 return true;

@@ -1,11 +1,14 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
+    "projectUniqueName": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
     "projectName": "Circustrein",
-    "projectPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
-    "outputPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\obj\\",
+    "projectPath": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
+    "outputPath": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
