@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj": {}
+    "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj": {
+    "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
+        "projectUniqueName": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
         "projectName": "Circustrein",
-        "projectPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
+        "projectPath": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\Circustrein.csproj",
         "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brian\\source\\repos\\Circustrein\\Circustrein\\Circustrein\\obj\\",
+        "outputPath": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
