@@ -11,7 +11,7 @@ namespace Circustrein
     public class Wagon
     {
         private List<Animal> AnimalsInWagon { get; set; }
-        private int MaxSize { get; set; }
+        private int MaxSize { get; set; } //Waarom is dit geen constant?
 
         public int CurrentSize
         {
@@ -24,7 +24,7 @@ namespace Circustrein
             AnimalsInWagon = new List<Animal>();
         }
 
-        public List<Animal> GetAnimalsInWagon()
+        public IEnumerable<Animal> GetAnimalsInWagon()
         {
             return AnimalsInWagon;
         }
@@ -42,7 +42,7 @@ namespace Circustrein
             return true;
         }
 
-        private bool CheckCarnivoreSize(Animal animalToCompare)
+        private bool CheckCarnivoreSize(Animal animalToCompare) //Naamgeving aanpassen
         {
             foreach (Animal animal in AnimalsInWagon)
             {
@@ -55,7 +55,7 @@ namespace Circustrein
             return true;
         }
 
-        private bool CheckHerbivoreSize(Animal animalToCompare)
+        private bool CheckHerbivoreSize(Animal animalToCompare) //Naamgeving aanpassen
         {
             foreach (Animal animal in AnimalsInWagon)
             {
@@ -68,8 +68,7 @@ namespace Circustrein
 
             return true;
         }
-
-        //This method tries to add an animal to a wagon by checking the previous three methods and then checking if there is room.
+        
         public bool TryAdd(Animal animalToAdd)
         {
             if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSize(animalToAdd) &&
