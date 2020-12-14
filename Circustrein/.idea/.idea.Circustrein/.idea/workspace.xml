@@ -24,13 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4f81ead0-2a79-4784-9989-fab0d9b1cb18" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Circustrein/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Circustrein/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/Train.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/Train.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/Wagon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/Wagon.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/bin/Debug/netcoreapp3.1/Circustrein.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/bin/Debug/netcoreapp3.1/Circustrein.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/bin/Debug/netcoreapp3.1/Circustrein.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/bin/Debug/netcoreapp3.1/Circustrein.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/obj/Debug/netcoreapp3.1/Circustrein.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/obj/Debug/netcoreapp3.1/Circustrein.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Circustrein/obj/Debug/netcoreapp3.1/Circustrein.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/obj/Debug/netcoreapp3.1/Circustrein.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Circustrein/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Circustrein/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +38,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -113,6 +108,7 @@
       <workItem from="1606235399238" duration="1283000" />
       <workItem from="1606242671975" duration="270000" />
       <workItem from="1606249238778" duration="6785000" />
+      <workItem from="1607914105927" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Updated train">
       <created>1606150672684</created>
@@ -128,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606254970947</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Train Finished">
+      <created>1607435825871</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607435825871</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,41 +156,52 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Updated train" />
     <MESSAGE value="Train seems to be working properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Train seems to be working properly" />
+    <MESSAGE value="Train Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Train Finished" />
   </component>
   <component name="WindowStateProjectService">
     <state x="536" y="169" key="#Inspection_severity" timestamp="1606235998916">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="536" y="169" key="#Inspection_severity/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606235998916" />
-    <state width="1279" height="1383" key="GridCell.Tab.0.bottom" timestamp="1606258706522">
+    <state width="1279" height="1383" key="GridCell.Tab.0.bottom" timestamp="1607435954601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1279" height="1383" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606258706522" />
-    <state width="1279" height="1383" key="GridCell.Tab.0.center" timestamp="1606258706521">
+    <state width="1279" height="1383" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435954601" />
+    <state width="1279" height="1383" key="GridCell.Tab.0.center" timestamp="1607435954601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1279" height="1383" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606258706521" />
-    <state width="1279" height="1383" key="GridCell.Tab.0.left" timestamp="1606258706521">
+    <state width="1279" height="1383" key="GridCell.Tab.0.center/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435954601" />
+    <state width="1279" height="1383" key="GridCell.Tab.0.left" timestamp="1607435954601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1279" height="1383" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606258706521" />
-    <state width="1279" height="1383" key="GridCell.Tab.0.right" timestamp="1606258706521">
+    <state width="1279" height="1383" key="GridCell.Tab.0.left/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435954601" />
+    <state width="1279" height="1383" key="GridCell.Tab.0.right" timestamp="1607435954601">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1279" height="1383" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606258706521" />
+    <state width="1279" height="1383" key="GridCell.Tab.0.right/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435954601" />
+    <state x="184" y="86" key="MergeDialog" timestamp="1607435782439">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="184" y="86" key="MergeDialog/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435782439" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1605878530261">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1605878530261" />
-    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1606257671798">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2" timestamp="1607435831274">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1606257671798" />
-    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605877359609">
+    <state x="552" y="244" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435831274" />
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607435732683">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.-365.2560.1440@0.0.1920.1050" timestamp="1605877359609" />
+    <state x="777" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.-435.2560.1440@0.0.1920.1050" timestamp="1607435732683" />
     <state x="733" y="398" width="621" height="284" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1605878529879">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
