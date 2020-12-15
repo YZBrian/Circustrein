@@ -13,9 +13,6 @@
         "packagesPath": "C:\\Users\\Brian\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Brian\\RiderProjects\\Circustrein\\Circustrein\\Circustrein\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
           "C:\\Users\\Brian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

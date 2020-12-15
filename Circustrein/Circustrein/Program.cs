@@ -10,8 +10,6 @@ namespace Circustrein
         static void Main(string[] args)
         {
             Train train = new Train();
-            train.AddWagon();
-
             List<Animal> animalCollection = new List<Animal>();
 
             Animal animal1 = new Animal(Size.Medium, Diet.Carnivore);
@@ -24,7 +22,7 @@ namespace Circustrein
             Animal animal8 = new Animal(Size.Small, Diet.Herbivore);
             Animal animal9 = new Animal(Size.Large, Diet.Herbivore);
             Animal animal10 = new Animal(Size.Medium, Diet.Herbivore);
-            
+
 
             animalCollection.Add(animal1);
             animalCollection.Add(animal2);

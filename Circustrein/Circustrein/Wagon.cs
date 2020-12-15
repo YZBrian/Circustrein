@@ -11,7 +11,7 @@ namespace Circustrein
     public class Wagon
     {
         private List<Animal> AnimalsInWagon { get; set; }
-        private int MaxSize { get; set; } //Waarom is dit geen constant?
+        public int MaxSize { get; private set; }
 
         public int CurrentSize
         {
@@ -42,7 +42,7 @@ namespace Circustrein
             return true;
         }
 
-        private bool CheckCarnivoreSize(Animal animalToCompare) //Naamgeving aanpassen
+        private bool CheckCarnivoreSizeBiggerOrEqualToAnimal(Animal animalToCompare)
         {
             foreach (Animal animal in AnimalsInWagon)
             {
@@ -55,7 +55,7 @@ namespace Circustrein
             return true;
         }
 
-        private bool CheckHerbivoreSize(Animal animalToCompare) //Naamgeving aanpassen
+        private bool CheckHerbivoreSizeSmallerOrEqualToCarnivoreSize(Animal animalToCompare)
         {
             foreach (Animal animal in AnimalsInWagon)
             {
@@ -71,8 +71,8 @@ namespace Circustrein
         
         public bool TryAdd(Animal animalToAdd)
         {
-            if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSize(animalToAdd) &&
-                CheckHerbivoreSize(animalToAdd) && (int) animalToAdd.Size + CurrentSize <= MaxSize)
+            if (CheckDoubleCarnivore(animalToAdd) && CheckCarnivoreSizeBiggerOrEqualToAnimal(animalToAdd) &&
+                CheckHerbivoreSizeSmallerOrEqualToCarnivoreSize(animalToAdd) && (int) animalToAdd.Size + CurrentSize <= MaxSize)
             {
                 AnimalsInWagon.Add(animalToAdd);
 
