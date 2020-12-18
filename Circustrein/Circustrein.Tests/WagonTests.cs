@@ -17,10 +17,6 @@ namespace Circustrein.Tests
         [TestMethod]
         public void Wagon_Can_Be_Constructed_With_Default_Capacity()
         {
-            //Arrange
-
-            //Act
-
             //Assert
             Assert.IsNotNull(_wagon);
             Assert.AreEqual(10, _wagon.MaxSize);
@@ -28,14 +24,11 @@ namespace Circustrein.Tests
 
         [TestMethod]
         public void
-            When_Animal_Is_Added_Capacity_Is_Lowered() //Mogen namen ook gewoon zoals normale methodes dus MethodeNamenAanElkaar in plaats van Dit_Rare_Gedoe?
+            When_Animal_Is_Added_Capacity_Is_Lowered()
         {
             //Arrange
             Animal a = new Animal(Size.Large, Diet.Herbivore);
-            int originalCapacity = _wagon.MaxSize;
-            int animalSize = (int) a.Size;
-            int expectedCapacity = originalCapacity - animalSize;
-            // int expectedCapacity = _wagon.MaxSize - (int)a.Size;
+            int expectedCapacity = _wagon.MaxSize - (int) a.Size;
 
             //Act
             _wagon.TryAdd(a);
@@ -45,43 +38,201 @@ namespace Circustrein.Tests
         }
 
         [TestMethod]
-        public void Cant_Add_Herbivore_With_Same_Or_Smaller_Size_To_Carnivore()
-        {
-            //Arrange
-            _wagon.TryAdd(new Animal(Size.Medium,
-                Diet.Carnivore)); //Moet dit gesplitst worden in 2 statements? Mag je aannemen dat dit correct werkt?
-
-            //Act
-            //_wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore));
-
-            //Assert
-            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore)));
-            //Mag je in de assert checken of de uitgevoerde code true/false teruggeeft of moet je de logic in act zetten en met een exception werken?
-        }
-
-        [TestMethod]
-        public void Cant_Add_Carnivore_With_Same_Size_Or_Bigger_To_Herbivore()
-        {
-            //Arrange
-            _wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore));
-
-            //Act
-
-            //Assert
-            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore)));
-        }
-
-        [TestMethod]
         public void Cant_Add_Animals_To_Full_Wagon()
         {
             //Arrange
             _wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore));
             _wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore));
 
-            //Act
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore)));
+        }
+
+        #region Add_Equal_Size_Animals
+        [TestMethod]
+        public void Cant_Add_Small_Carnivore_To_Small_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Small_Herbivore_To_Small_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Medium_Carnivore_To_Medium_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Medium_Herbivore_To_Medium_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Large_Carnivore_To_Large_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Large_Herbivore_To_Large_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore));
 
             //Assert
             Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore)));
         }
+        #endregion
+
+        #region Add_Bigger_Animal_To_Smaller_Animal
+        [TestMethod]
+        public void Cant_Add_Medium_Carnivore_To_Small_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Can_Add_Medium_Herbivore_To_Small_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Large_Carnivore_To_Small_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Can_Add_Large_Herbivore_To_Small_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Large_Carnivore_To_Medium_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Can_Add_Large_Herbivore_To_Medium_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore)));
+        }
+        #endregion
+
+        #region Add_Smaller_Animal_To_Bigger_Animal
+
+        [TestMethod]
+        public void Can_Add_Small_Carnivore_To_Large_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Small_Herbivore_To_Large_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Can_Add_Medium_Carnivore_To_Large_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Herbivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Medium_Herbivore_To_Large_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Large, Diet.Carnivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore)));
+        }
+
+        [TestMethod]
+        public void Can_Add_Small_Carnivore_To_Medium_Herbivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Herbivore));
+
+            //Assert
+            Assert.IsTrue(_wagon.TryAdd(new Animal(Size.Small, Diet.Carnivore)));
+        }
+
+        [TestMethod]
+        public void Cant_Add_Small_Herbivore_To_Medium_Carnivore()
+        {
+            //Arrange
+            _wagon.TryAdd(new Animal(Size.Medium, Diet.Carnivore));
+
+            //Assert
+            Assert.IsFalse(_wagon.TryAdd(new Animal(Size.Small, Diet.Herbivore)));
+        }
+        #endregion
     }
 }
